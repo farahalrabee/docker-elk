@@ -11,7 +11,7 @@ services:
       - "9200:9200"
       - "9300:9300"
     environment:
-      ES_JAVA_OPTS: "-Xmx256m -Xms256m"
+      ES_JAVA_OPTS: "-Xmx2g -Xms2g"
       ELASTIC_PASSWORD: changeme
     networks:
       - elk
@@ -34,7 +34,7 @@ services:
       - "6000:6000"
       - "2000:2000"
     environment:
-      LS_JAVA_OPTS: "-Xmx256m -Xms256m"
+      LS_JAVA_OPTS: "-Xmx2g -Xmx2g"
     networks:
       - elk
     depends_on:
