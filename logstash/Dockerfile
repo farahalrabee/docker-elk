@@ -7,3 +7,4 @@ RUN logstash-plugin install logstash-input-jdbc
 RUN logstash-plugin install logstash-filter-mutate
 RUN logstash-plugin install logstash-filter-aggregate
 RUN logstash-plugin install logstash-filter-sleep
+RUN logstash-plugin install logstash-filter-geoip
